@@ -105,5 +105,5 @@ function checkBoxEventDiv() {
 	}
 
 	console.log(arrIn);
-	document.getElementById("total").value = res.toFixed(6);
+	document.getElementById("total").value = res;
 }
