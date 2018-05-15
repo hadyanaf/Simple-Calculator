@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang= "en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <center>
+      <div class="container">
+        <h2>Calculator</h2>
+        <div class="form-group">
+
+          <div class="form-inline">
+            <input placeholder="Input your first number" type="text" class="form-control mb-2 mr-sm-2 mb-sm-2" id="input1" style="width: 220px" />
+            <input type="checkbox" class="mb-2 mr-sm-2 mb-sm-2" id="cb1"/>
+          </div>
+          <div class="form-inline">
+            <input placeholder="Input your second number" type="text" class="form-control mb-2 mr-sm-2 mb-sm-2" id="input2" style="width: 220px" />
+            <input type="checkbox" class="mb-2 mr-sm-2 mb-sm-2" id="cb2"/>
+          </div>
+          <div class="form-inline">
+            <input placeholder="Input your third number" type="text" class="form-control mb-2 mr-sm-2 mb-sm-2" id="input3" style="width: 220px" />
+          <input type="checkbox" class="mb-2 mr-sm-2 mb-sm-2" id="cb3"/>
+          </div>
+        </div>
+
+        <div class="button-checkbox">
+          <input id="sum" type="button" value="+" class="btn btn-warning" onClick="checkBoxEventSum()"/>
+          <input id="subs" type="button" value="-" class="btn btn-warning" onClick="checkBoxEventSubs()"/>
+          <input id="mult" type="button" value="x" class="btn btn-warning" onClick="checkBoxEventMult()"/>
+          <input id="div" type="button" value="/" class="btn btn-warning" onClick="checkBoxEventDiv()"/>
+        </div>
+
+        <div class="form-group row">
+          <br><label class="col-sm-2">Result</label>
+          <div class="col-sm-10">
+            <input type="text" readonly class="form-control-plaintext" id="total"/>
+          </div>
+        </div>
+
+      </div>
+    <center>
+  </body>
+  <script src="javascript/operator.js"></script>
+</html>
